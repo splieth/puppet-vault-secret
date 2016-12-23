@@ -56,11 +56,11 @@ This module has the following requirements:
 
 ## Dependencies
 
-None.
+ - [puppetlabs-stdlib](https://forge.puppetlabs.com/puppetlabs/stdlib), `>= 4.6.0`
 
 ## Installation
 
-In order to install the module, you can utilize [librarian-puppet](https://github.com/rodjek/librarian-puppet) in order to get it as a dependency. Simple add the following line to your `Puppetfile`:
+In order to install the module, you can utilize [librarian-puppet](https://github.com/rodjek/librarian-puppet) to get it as dependency. Simple add the following line to your `Puppetfile`:
 
 ```ruby
 mod 'counterliero/vault_secret', '>= 0.0.1'
