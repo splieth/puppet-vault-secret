@@ -1,4 +1,4 @@
-# Chronos Puppet Module
+# Vault-Secret Puppet Module
 
 [![Puppet
 Forge](http://img.shields.io/puppetforge/v/counterliero/vault_secret.svg)](https://forge.puppetlabs.com/counterliero/vault_secret)
