@@ -5,8 +5,10 @@ module Puppet::Parser::Functions
     secret_path = args[0]
     secret_value = args[1]
 
-    raise ArgumentError, 'You need to specify the path to read (e.g. "secret/foo/bar")' if secret_path.nil?
-    raise ArgumentError, 'You need to specify value that will be read from the secret' if secret_value.nil?
+    raise ArgumentError, 'Wrong number of arguments' if args.size != 2
+
+    raise 'VAULT_ADDR not set' unless ENV['VAULT_ADDR']
+    raise 'VAULT_TOKEN not set' unless ENV['VAULT_TOKEN']
 
     Vault.address = ENV['VAULT_ADDR']
     Vault.token = ENV['VAULT_TOKEN']

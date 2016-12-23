@@ -10,11 +10,11 @@
 # [*token*] - Token to access Vault
 #
 class vault_secret (
-  $url = $vault_secret::params::url,
-  $token = $vault_secret::params::token,
-) inherits vault_secret::params {
+  $url = undef,
+  $token = undef,
+)  {
 
-  if($url != undef) {
+  if($url == undef or empty($url) or $url == false) {
     validate_string($url)
 
     exec { 'set-vault-url-in-env':
@@ -22,8 +22,7 @@ class vault_secret (
     }
   }
 
-
-  if($token != undef) {
+  if($token == undef or empty($token) or $token == false) {
     validate_string($token)
 
     exec { 'set-vault-token-in-env':

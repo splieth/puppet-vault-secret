@@ -2,7 +2,14 @@ require 'spec_helper'
 
 describe 'vault_secret' do
 
-  context 'with defaults' do
+  context 'with undef params' do
+
+    let(:params) do
+      {
+          url: nil,
+          token: nil,
+      }
+    end
 
     it 'does not set env' do
       should_not contain_exec('set-vault-url-in-env')

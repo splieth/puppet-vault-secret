@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'puppet', ENV['PUPPET_GEM_VERSION'] || '~> 4.8'
+gem 'puppet', ENV['PUPPET_VERSION'] || '~> 4.8'
 gem 'vault'
 
 group :test do
