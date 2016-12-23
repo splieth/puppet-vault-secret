@@ -2,6 +2,9 @@
 sudo: false
 language: ruby
 script: "bundle exec rake"
+env:
+  - VAULT_ADDR=http://some-vault.com
+  - VAULT_TOKEN=123-456-789
 matrix:
   include:
   - rvm: 2.1.5
