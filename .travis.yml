@@ -2,14 +2,20 @@
 sudo: false
 language: ruby
 script: "bundle exec rake"
-env:
-  - VAULT_ADDR=http://some-vault.com
-  - VAULT_TOKEN=123-456-789
 matrix:
   include:
   - rvm: 2.1.5
-    env: PUPPET_GEM_VERSION="~> 3.0"
+    env:
+      - PUPPET_GEM_VERSION="~> 3.0"
+      - VAULT_ADDR=http://some-vault.com
+      - VAULT_TOKEN=123-456-789
   - rvm: 2.1.5
-    env: PUPPET_GEM_VERSION="~> 3.0" FUTURE_PARSER="yes"
+    env:
+      - PUPPET_GEM_VERSION="~> 3.0" FUTURE_PARSER="yes"
+      - VAULT_ADDR=http://some-vault.com
+      - VAULT_TOKEN=123-456-789
   - rvm: 2.3.3
-    env: PUPPET_GEM_VERSION="~> 4.0" STRICT_VARIABLES="yes"
+    env:
+      - PUPPET_GEM_VERSION="~> 4.0" STRICT_VARIABLES="yes"
+      - VAULT_ADDR=http://some-vault.com
+      - VAULT_TOKEN=123-456-789
