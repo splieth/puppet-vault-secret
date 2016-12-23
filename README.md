@@ -60,7 +60,7 @@ This module has the following requirements:
 
 ## Installation
 
-In order to install the module, you can utilize [librarian-puppet](https://github.com/rodjek/librarian-puppet) to get it as dependency. Simple add the following line to your `Puppetfile`:
+In order to install the module, you can utilize [librarian-puppet](https://github.com/rodjek/librarian-puppet) to get it as dependency. Simply add the following line to your `Puppetfile`:
 
 ```ruby
 mod 'counterliero/vault_secret', '>= 0.0.1'
