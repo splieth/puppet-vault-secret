@@ -16,6 +16,7 @@ You can do this via the this module (see Parameters for details):
 class { 'vault_secret':
 	url   => 'https://some-vault.com:443',
 	token => 'abc-123-555-666',
+}
 ```
 
 If you don't use the module for doing this, the custom function will still rely on the environment variables to be set. So beware to set them ;)
