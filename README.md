@@ -18,7 +18,7 @@ class { 'vault_secret':
 	token => 'abc-123-555-666',
 ```
 
-If you don't use the module for doing this, the custom function will still rely on the environment variables to be set.
+If you don't use the module for doing this, the custom function will still rely on the environment variables to be set. So beware to set them ;)
 
 Afterwards, you will be able to read a secret.
 
