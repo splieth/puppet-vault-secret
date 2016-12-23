@@ -1,0 +1,30 @@
+{
+  "name": "counterliero-vault_secret",
+  "version": "0.0.1",
+  "author": "Matthias Splieth",
+  "summary": "Provides a custom function to read secrets from Vault",
+  "license": "Apache-2.0",
+  "source": "https://github.com/counterliero/puppet-vault-secret",
+  "project_page": "https://github.com/counterliero/puppet-vault-secret",
+  "issues_url": "https://github.com/counterliero/puppet-vault-secret/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.6.0 < 5.0.0"
+    }
+  ]
+}
